@@ -1,8 +1,7 @@
 const assert = require('assert');
-const { sum } = require('../src/index.js');
+const { sum, multiply } = require('../src/index.js');
 
-assert.strictEqual(sum(1, 2), 3, '1 + 2 should be 3');
-assert.strictEqual(sum(-1, 1), 0, '-1 + 1 should be 0');
-assert.strictEqual(sum(0, 0), 0, '0 + 0 should be 0');
+// Intentionally wrong expectation to make CI go red
+assert.strictEqual(sum(1, 2), 999, 'this will fail on purpose');
 
-console.log('✅ all tests passed');
+console.log('should not reach here');
