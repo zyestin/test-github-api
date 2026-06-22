@@ -1,0 +1,11 @@
+{
+  "name": "test-github-api",
+  "version": "1.0.0",
+  "description": "Tiny web project to demo GitHub CI status reading via fine-grained PAT",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node test/sum.test.js",
+    "lint": "node -e \"require('fs').readFileSync('src/index.js'); console.log('lint ok')\""
+  },
+  "license": "MIT"
+}
